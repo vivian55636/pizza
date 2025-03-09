@@ -1,0 +1,26 @@
+### GET REQUEST
+GET http://localhost:3000 
+
+### POST REQUEST FOR PLACING NEW PIZZA ORDER
+POST http://localhost:3000/api/orders
+Content-Type: application/json
+
+### GET REQUEST FOR LISTING ALL ORDERS
+GET http://localhost:3000/api/orders
+
+### GET REQUEST FOR RETRIEVING A SPECIFIC PIZZA ORDER
+GET http://localhost:3000/api/orders/40E24030-461E-46B0-A5C2-1235D4D787C2
+
+### PUT REQUEST FOR MODIFYING AN EXISTING PIZZA ORDER
+PUT http://localhost:3000/api/orders/8995A643-1EBB-431D-89F7-AB9EAC021870
+
+### DELETE REQUEST FOR CANCELLING AN EXISTING PIZZA ORDER
+DELETE http://localhost:3000/api/orders/75D09EAC-B971-47BB-8C5D-0AA2D375C900
+
+### POST REQUEST FOR MARKING AN ORDER AS COMPLETED
+POST http://localhost:3000/api/orders/FB622AFF-FB85-43C3-B87F-C0CCEA35DDFD/complete
+Content-Type: application/json
+
+### POST REQUEST FOR SERVER ERROR
+POST http://localhost:3000/api/orders/invalidOrderId
+Content-Type: application/json
